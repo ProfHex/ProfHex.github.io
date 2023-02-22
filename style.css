@@ -1,0 +1,141 @@
+:root {
+  background-color: #151515;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.hexresim {
+  border-radius: 9999px;
+  }
+
+svg{
+  height: 40px;
+}
+
+@keyframes color-change1 {
+  0% { color: white; }
+  25% { color: #30beff; }
+}
+
+
+@keyframes color-change2 {
+  0% { color: #30beff; }
+  50% { color: #be239c; }
+  100% { color: #30beff; }
+}
+nav{
+  height: 60px;
+  width: 60%;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+
+nav div.nav1{
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+}
+
+nav div.nav1 img{
+  height: 50px;
+  width: 50px;
+}
+
+nav div.nav1 h1{
+  font-size: 25px;
+  position: relative;
+      left: 10px;
+}
+
+nav div.nav1 h1:hover{
+    animation: color-change1 4s infinite;
+}
+
+nav div.nav2{
+    display: flex;
+    margin-left: auto;
+}
+
+nav a.navicon{
+  height: 40px;
+  display: flex;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  border-style: solid;
+  border-color: #151515;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+nav a.navicon:hover{
+  transition: 1s cubic-bezier(0.16, 1, 0.3, 1);
+  border-style: solid;
+  border-color: #30beff;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+path.nav{
+  height: 200px;
+}
+
+
+div.info{
+
+  width: 80%;
+   align-items: center;
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+
+div.info h1.title{
+      animation: color-change2 4s infinite;
+  font-size: 75px;
+  position: relative;
+      left: 10px;
+      top: -50px;
+  display: flex;
+}
+
+div.info h2{
+  width: 600px;
+  height: 280px;
+  display: flex;
+    font-size: 25px;
+    position: relative;
+      top: 150px;
+      right: 329px;
+
+}
+
+
+nav.footer{
+  height: 60px;
+  width: 60%;
+  text-align: center;
+  display: flex;
+    position: absolute;
+  bottom: 0;
+  right: 0;
+  left : 0;
+}
+
+nav.footer h1.a{
+  font-size: 15px;
+  margin: auto;
+}
+
+nav.footer h1.a a{
+    animation: color-change2 4s infinite;
+    text-decoration: none;
+}
+
+nav.footer h1.a svg{
+  height: 25px;
+  position: relative;
+  top: 5px;
+}
