@@ -30,11 +30,24 @@ svg{
   100% { color: #30beff; }
 }
 nav{
+  background: #151515;  
   height: 60px;
-  width: 60%;
+  width: 100%;
   align-items: center;
   display: flex;
   margin: auto;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+}
+
+nav div.body{
+    height: 60px;
+  width: 60%;
+    display: flex;
+  margin: auto;
+  position: fixed;
+  left: 20%;
 }
 
 nav div.nav1{
@@ -63,6 +76,9 @@ nav div.nav2{
     margin-left: auto;
 }
 
+nav div.nav3{
+  display: none;
+}
 
 nav a.navicon{
   height: 40px;
@@ -109,7 +125,7 @@ div.info{
   margin: auto;
   position: relative;
   top: 60px;
-    z-index: 1;
+    z-index: 2;
 }
 
 div.infobg{
@@ -148,6 +164,7 @@ div.info h2{
 }
 
 div.skills{
+  display: block;
   align-items: center;
   margin: auto;
   width: 80%;
@@ -168,16 +185,114 @@ div.skills img.simg{
   position: relative;
   display: block;
 }
+/* Projects */
+div.project{
+  position: relative;
+  top: 100px;
+  display: block;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 120px;
+}
+div.project h1.ptitle{
+  font-size: 40px;
+  text-align: center;
+}
+div.proje1{
+  display: block;
+  border-left-style: solid;
+  border-color: #30beff;
+  border-width: 5px;
+  background-color: #242424;
+  border-radius: 5px;
+  height: 105px;
+  width: 250px;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+      left: 20%;
+}
 
+div.proje1:hover{
+  transition: 1s cubic-bezier(0.16, 1, 0.3, 1);
+  background-color: #000203;
+}
+
+div.proje1title{
+  font-size: 20px;
+  color: #30beff;
+  height: 25px;
+  width: 150px;
+  position: relative;
+      left: 100px;
+      top: -100px;
+}
+
+div.proje1info{
+  color: white;
+  height: 75px;
+  width: 150px;
+  position: relative;
+      left: 100px;
+      top: -95px;
+}
+
+div.proje2{
+  border-left-style: solid;
+  border-color: #30beff;
+  border-width: 5px;
+  background-color: #242424;
+  border-radius: 5px;
+  height: 105px;
+  width: 250px;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+      left: 25%;
+      top: 20px;
+}
+
+div.proje2:hover{
+  transition: 1s cubic-bezier(0.16, 1, 0.3, 1);
+  background-color: #000203;
+}
+
+div.proje2title{
+  font-size: 20px;
+  color: #30beff;
+  height: 25px;
+  width: 150px;
+  position: relative;
+      left: 100px;
+      top: -100px;
+}
+
+div.proje2info{
+  color: white;
+  height: 75px;
+  width: 150px;
+  position: relative;
+      left: 100px;
+      top: -95px;
+}
+
+img.proje2{
+  height: 100px;
+  width: 100px;
+}
+
+/* Footer */
 nav.footer{
   height: 60px;
   width: 60%;
   text-align: center;
   display: flex;
     position: absolute;
-  bottom: 0;
-  right: 0;
-  left : 0;
+    top: 1200px;
+  bottom: 0px;
+  right: 0px;
+  left : 0px;
 }
 
 nav.footer h1.a{
@@ -194,4 +309,152 @@ nav.footer h1.a svg{
   height: 25px;
   position: relative;
   top: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  
+  nav{
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+}
+  nav div.body{
+      display: flex;
+  margin: auto;
+  position: fixed;
+  left: 0px;
+ padding: 3px;
+  }
+  nav div.nav1 h1.navtitle{
+      font-size: 15px;
+        white-space: nowrap;
+
+}
+
+
+  nav div.nav2{
+    display: none;
+  }
+  
+  nav div.nav3{
+    margin-left: auto;
+    display: flex;
+    z-index: 4;
+    text-align: center;
+    position: relative;
+    left: 80px;
+}
+
+  nav div.nav3:hover div.navlinks{
+      display: flex;
+  }
+  nav div.nav3:hover{
+      position: relative;
+  }
+  nav div.nav3 div.navtitle svg{
+      display: flex;
+      position: relative;
+      left: 120px;
+  }
+  nav div.nav3 div.navlinks{
+      font-size: 20px;
+      background: #151515;
+      width: 600px;
+      height: 80px;
+      display: none;
+      border-bottom-style: solid;
+      border-color: #30beff;  
+      margin: auto;
+      z-index: 5;
+      text-align: center;
+      position: relative;
+      right: 250px;
+      text-decoration: none;
+        color: white;
+  }
+  nav div.nav3 div.navlinks a.navlinkss{
+      text-align: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      position: relative;
+      left: 250px;
+      top: 20px;
+  }
+    nav div.nav3 div.navlinks a.navlinkss svg{
+        height: 30px;
+        position: relative;
+        top: 5px;
+}
+
+  div.background{
+    background: none;
+  }
+  div.info img{
+    position:relative;
+    left: 70px;
+    bottom: 250px;
+    display: flex;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    align-items: center;
+  }
+  div.infobg{
+      background: none;
+  }
+div.info{
+    position:relative;
+    top: 270px;
+}
+div.info h2.title{
+  animation: color-change2 4s infinite;
+  font-size: 60px;
+  position: absolute;
+  top: 30px;
+  right: 280px;
+  display: flex;
+  width: 700px;
+  height: 70px;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+div.info h2{
+  width: 475px;
+  height: 120px;
+  display: flex;
+   font-size: 25px;
+  position: relative;
+  right: 300px;
+  z-index: 3;
+}
+
+ div.skills{
+      position:relative;
+    top: 200px;
+  }
+
+  div.project{
+      position:relative;
+    top: 400px;
+  }
+  div.project div.proje1{
+      position: relative;
+      left: 30px;
+  }
+ div.project div.proje2{
+     position: relative;
+     top: -10px; 
+     left: 30px;
+ }
+  nav.footer{
+      position:relative;
+    top: 700px;
+  }
 }
