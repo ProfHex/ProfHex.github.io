@@ -1,6 +1,7 @@
 // Loading Screen
 window.addEventListener("load", function(){
     document.getElementById("website-loading").style.display = "none";
+    document.getElementById("website-loading").style.transitionDuration = "1s";
 })
 
 window.onscroll = function() {scrollFunction()};
