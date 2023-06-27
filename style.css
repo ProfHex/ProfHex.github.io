@@ -183,7 +183,7 @@
 #website-project-list{
     background: none;
     width: 100%;
-    height: 350px;
+    height: 450px;
     padding: 5px;
     grid: auto auto / auto auto;
     grid-template-columns: auto auto / auto auto;
@@ -197,7 +197,7 @@
     padding: 25px;
     text-decoration: none;
     text-align: center;
-    width: 350px;
+    width: 450px;
     height: 150px;
     border-left-color: #A5D7E8;
     border-left-style: solid;
@@ -210,7 +210,7 @@
     text-align: center;
     position: absolute;
     bottom: 0%;
-    top: 180%;
+    top: 225%;
     width: 100%;
     height: 60px;
     background: #0f0f11;
